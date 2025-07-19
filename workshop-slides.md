@@ -9,11 +9,11 @@ footer: 'Matt Hamilton | ASIMOV Protocol'
 
 <!-- _class: lead -->
 # Leverage AI Tools to Accelerate Learning in Data Science
-## 2-Hour AI Workshop
 
-**Matt Hamilton**
+**Matt Hamilton**  
+*Head of DevRel, ASIMOV Protocol*
 
-📱 Resources: [QR Code]
+
 
 ---
 
@@ -21,8 +21,27 @@ footer: 'Matt Hamilton | ASIMOV Protocol'
 
 **IBM** → **Ripple** → **Protocol Labs** → **Arbitrum** → **ASIMOV Protocol**
 
-🏄‍♂️ Moved to Barbados in 2020 on the Welcome Stamp during the pandemic.
-💻 Build blockchain / AI systems
+- 🏄‍♂️ Moved to Barbados in 2020 on the Welcome Stamp during the pandemic.
+- 💻 Head of Developer Relations - working with global AI teams from paradise
+
+![bg right:30%](_images/matt_beach_headshot.jpg)
+
+---
+
+# Inspiration: Kate Kallot's Vision
+
+**AI for Good Summit 2025, Geneva**
+
+*"The AI revolution is not being written in Silicon Valley. It's coming from Manila, from Bridgetown, from Nairobi, from Accra, from Jakarta, and from Bangui."*
+
+**Key Insights:**
+- 90% of data centers in US & China, <1% in Africa
+- Constraint-driven creativity is our superpower
+- Local context creates competitive advantage
+
+![bg right:40%](_images/kate-kallot-talk.jpg)
+
+**Watch:** [AI for Good Summit Talk](https://www.youtube.com/live/ETbzT35hRr4?si=qPo7_N-WyyY8DS3Y&t=4611)
 
 ---
 
@@ -32,7 +51,7 @@ footer: 'Matt Hamilton | ASIMOV Protocol'
 **Yesterday:** Steel mills, factories, centrifuges
 **Today:** Laptop + internet connection
 
-![bg right:40%](https://via.placeholder.com/400x300/0066cc/ffffff?text=Factory→Laptop)
+![bg right:40%](_images/polina-volkova-61_WDEKFlhY-unsplash.jpg)
 
 Global competition democratized
 
@@ -170,6 +189,8 @@ at the beach bar thing you know where 🔥🎵"
 **Problem:** LLMs are smart but forgetful, prone to hallucination
 **Solution:** Verifiable knowledge graphs for AI reasoning
 
+**Global team:** Poland, Dubai, Ukraine (I lead DevRel from Barbados)
+
 **Comparison:**
 - Regular LLM: "I think Barbados population is..."
 - ASIMOV: "According to 2022 census data: 281,200"
@@ -180,6 +201,8 @@ at the beach bar thing you know where 🔥🎵"
 
 **Problem:** Information overload, disconnected notes
 **Solution:** Second brain that connects your knowledge
+
+**Global development:** International team, Barbados-based strategy
 
 **Demo:** Upload documents → Ask questions across knowledge base
 
@@ -230,7 +253,7 @@ graph LR
 
 > "You don't need Silicon Valley to build world-class AI"
 
-**Evidence:** 4 production AI systems built in Barbados
+**Evidence:** WeOutside246 & YuhHearDem built locally, global teams coordinated from Barbados
 
 ---
 
@@ -345,116 +368,93 @@ qa = RetrievalQA.from_chain_type(
 
 ☕ Stretch, network, grab refreshments
 
-**Next:** Hands-on building exercise
+**Next:** AI Prompting Competition
 
 ---
 
 <!-- _class: lead -->
-# Section 3: Building a Local AI Tool
+# Section 3: AI Prompting Competition
 
-*25 minutes to prototype*
-
----
-
-# Problem Brainstorm
-
-**Choose your challenge:**
-🏖️ Tourism information scattered across platforms
-🏪 Local business discovery & recommendations  
-📚 Cultural knowledge preservation
-🏛️ Government service navigation
-🌊 Climate/weather pattern analysis
-
-**Form teams of 2-3 people**
+*Master the art of prompt engineering*
 
 ---
 
-# Building Phases
+# The Challenge
 
-**Phase 1:** Data Collection (10 minutes)
-**Phase 2:** AI Processing (10 minutes)  
-**Phase 3:** User Interface (5 minutes)
+**Your Mission:** Clean messy CSV data using AI prompts
 
-*Don't aim for perfection - aim for working prototype*
+**The Setup:**
+- You write prompts for Gemma 2 4B model
+- Your prompts must clean provided messy data
+- Gemini 2.5 Pro scores your results
+- Real-time leaderboard tracks performance
+
+**Goal:** Best prompt engineering wins!
 
 ---
 
-# Phase 1: Data Collection
+# Data Quality Issues to Fix
 
-**Quick wins:**
-```python
-import requests
-from bs4 import BeautifulSoup
+**What's broken in the data:**
+🗓️ **Mixed date formats** - Various representations
+📞 **Phone number chaos** - Inconsistent formatting  
+📍 **Location variations** - Same place, different names
+👤 **Name inconsistencies** - Extra spaces, mixed case
+❓ **Missing data** - Different missing value formats
+🔢 **Invalid entries** - Impossible dates (month 13)
 
-# Scrape a simple website
-response = requests.get('https://example.com')
-soup = BeautifulSoup(response.text, 'html.parser')
-data = soup.find_all('div', class_='content')
+---
+
+# Competition Format
+
+**Live Scoring:**
+- Submit your prompt → Get scored immediately
+- Leaderboard updates in real-time
+- Multiple attempts allowed (best score counts)
+- Rate limited to keep it fair
+
+**Platform:** [Competition URL]
+
+![bg right:40%](https://via.placeholder.com/400x300/cc6600/ffffff?text=Competition+Platform)
+
+---
+
+# Scoring Criteria (100 Points Total)
+
+**Data Completeness** (20pts) - Handle missing values
+**Format Consistency** (20pts) - Standardize formats  
+**Location Standardization** (15pts) - Consistent place names
+**Data Validity** (15pts) - Fix invalid entries
+**Information Preservation** (15pts) - Keep important data
+**Overall Cleanliness** (15pts) - General quality
+
+*Gemini 2.5 Pro evaluates each category*
+
+---
+
+# Prompt Engineering Tips
+
+**Effective Strategies:**
+```
+Be specific: "Convert all dates to YYYY-MM-DD format"
+Give examples: "Change 'John  Smith' to 'John Smith'"
+Handle edge cases: "If month > 12, treat as day/month"
+Preserve data: "Don't remove any rows unless completely empty"
 ```
 
-**Tips:** Start simple, clean as you go
+**Think like a data analyst giving instructions**
 
 ---
 
-# Phase 2: AI Processing
+# Competition Rules
 
-**Gemini API Integration:**
-```python
-import google.generativeai as genai
+⏱️ **Duration:** 30 minutes
+🔄 **Submissions:** Unlimited (rate limited)
+🏆 **Scoring:** Best attempt counts
+👥 **Teams:** Individual or pairs
+📊 **Transparency:** All scores visible live
 
-genai.configure(api_key="your-key")
-model = genai.GenerativeModel('gemini-pro')
-
-response = model.generate_content(
-    f"Extract entities from: {text}"
-)
-```
-
-**Focus:** Entity extraction, sentiment, categorization
-
----
-
-# Phase 3: User Interface
-
-**Streamlit for rapid prototypes:**
-```python
-import streamlit as st
-
-st.title("My AI Tool")
-query = st.text_input("Ask me anything:")
-
-if query:
-    result = process_with_ai(query)
-    st.write(result)
-```
-
-**Keep it simple and functional**
-
----
-
-# Demo Time!
-
-**2 minutes per team:**
-- Show your prototype
-- Explain your approach  
-- Share biggest challenge
-- Discuss next iteration
-
-*Remember: 25-minute prototype, not production system*
-
----
-
-# Exercise Debrief
-
-**Common challenges:**
-- API rate limits
-- Data cleaning complexity
-- Integration difficulties
-
-**Successful approaches:**
-- Start with mock data
-- Focus on core functionality
-- Iterate quickly
+**Let the best prompt win!**
 
 ---
 
@@ -671,113 +671,3 @@ if query:
 📧 **Contact:** matt@example.com
 
 **Thank you! Now go build something amazing.**
-
----
-
-<!-- _class: lead -->
-# Backup Slides
-
-*Additional content if time permits*
-
----
-
-# Code Example: Simple AI Pipeline
-
-```python
-import openai
-import pandas as pd
-
-def process_local_data(text_data):
-    """Simple AI processing pipeline"""
-    
-    # Clean and structure data
-    cleaned = preprocess_text(text_data)
-    
-    # AI analysis
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[{
-            "role": "user", 
-            "content": f"Extract key information: {cleaned}"
-        }]
-    )
-    
-    return response.choices[0].message.content
-
-# Usage
-local_events = load_instagram_data()
-structured_events = process_local_data(local_events)
-```
-
----
-
-# Resource Links
-
-**Essential Tools:**
-- Python: python.org
-- VS Code: code.visualstudio.com  
-- Git: git-scm.com
-
-**AI APIs:**
-- Gemini: ai.google.dev
-- OpenAI: platform.openai.com
-- Claude: anthropic.com
-
-**Learning:**
-- LangChain docs
-- Hugging Face tutorials
-- Caribbean AI community
-
----
-
-# Technical Deep Dive: Vector Embeddings
-
-```python
-from sentence_transformers import SentenceTransformer
-import numpy as np
-
-# Create embeddings
-model = SentenceTransformer('all-MiniLM-L6-v2')
-texts = ["Crop Over festival", "Kadooment parade"]
-embeddings = model.encode(texts)
-
-# Calculate similarity  
-similarity = np.dot(embeddings[0], embeddings[1])
-print(f"Similarity: {similarity}")
-```
-
-**Use cases:** Semantic search, recommendation systems, content clustering
-
----
-
-# Funding Landscape for Caribbean AI
-
-**Government Programs:**
-- Innovation grants
-- Digital transformation initiatives
-- Research partnerships
-
-**International Funding:**
-- World Bank digital development
-- UN sustainability goals
-- Private foundation grants
-
-**Venture Capital:**
-- Regional VCs interested in AI
-- International investors in emerging markets
-
----
-
-# AI Ethics & Responsibility
-
-**Key Considerations:**
-- Data privacy and sovereignty
-- Algorithmic bias in small populations  
-- Cultural sensitivity in AI training
-- Economic impact on traditional jobs
-
-**Best Practices:**
-- Transparent AI development
-- Community involvement in design
-- Regular bias auditing
-- Inclusive training data
