@@ -20,14 +20,35 @@ footer: 'Matt Hamilton | ASIMOV Protocol'
 
 # My Journey
 
-**IBM** → **Ripple** → **Protocol Labs** → **Arbitrum** → **ASIMOV**
+**University** (CompSci) → **Netsight** → **enquos** → **IBM** → **Ripple** → **Protocol Labs** → **Arbitrum** → **ASIMOV**
 
-- Moved to Barbados during the pandemic
 - Moved to Barbados in 2020 on the Welcome Stamp during the pandemic
-- Building blockchain/AI systems from Barbados
+- Building blockchain/AI systems from here
 - Paddleboarding with my dogs
+- Wukkin up (with a concrete waistline)
 
 ![bg right:30%](_images/matt_beach_headshot.jpg)
+
+---
+
+
+# Today’s Plan
+
+1. Context
+1. Real Projects from Barbados
+2. AI Tools You Can Use Today
+3. ⚡ Prompting Challenge
+4. Context Engineering
+5. AI Toolkit
+6. Careers & Next Steps
+
+---
+
+# Slides and Resources
+
+![h:350 drop-shadow ](_images/qrcode_github.com.png) 
+
+[https://github.com/hammertoe/AIPromptingWorkshop/](https://github.com/hammertoe/AIPromptingWorkshop/)
 
 ---
 
@@ -37,6 +58,7 @@ footer: 'Matt Hamilton | ASIMOV Protocol'
 * AI is the great equalizer — all you need is a laptop and internet
 * You can build tools the world uses, from right here
 
+![bg right:40%](_images/barbados.jpg)
 
 
 ---
@@ -60,6 +82,8 @@ footer: 'Matt Hamilton | ASIMOV Protocol'
 * Constraint = innovation
 * Local context creates better AI
 
+![bg right:40%](_images/datacenter.jpg)
+
 
 ---
 
@@ -80,17 +104,6 @@ Global competition has been democratized.
 🛠️ Learn real-world prompting skills
 🎯 Build smarter, not bigger
 🌍 Solve local problems with global relevance
-
----
-
-# Today’s Journey
-
-1. Real Projects from Barbados
-2. AI Tools You Can Use Today
-3. Prompt Engineering Skills
-4. ⚡ Prompting Challenge
-5. Strategic Caribbean AI
-6. Careers & Next Steps
 
 ---
 
@@ -255,6 +268,11 @@ Global competition has been democratized.
 * 🏆 Best score wins!
 
 **Scoring metrics:** Formatting, completeness, accuracy, structure
+
+---
+<!-- _class: lead -->
+
+# bit.ly/bim-ai-workshop
 
 ---
 
