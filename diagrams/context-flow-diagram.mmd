@@ -1,0 +1,41 @@
+flowchart LR
+    UM["User message"]
+    UM --> PARSE["Parse intent\n+ key terms"]
+    PARSE --> EMB["Embed query"]
+
+    subgraph RET["Retrieve relevant context"]
+        direction TB
+        PROFILE["User profile\n+ preferences"]
+        FACTS["Known facts\n(verified)"]
+        RAG["Hybrid search\n(vector + keyword)"]
+        BUDGET["Select top snippets\n(token budget)"]
+        RAG --> BUDGET
+    end
+
+    EMB --> RAG
+    EMB --> FACTS
+
+    HISTORY["Recent conversation\n(last N messages)"]
+    SYSTEM["System prompt\n(rules + format)"]
+
+    subgraph PACK["Context pack (what the model sees)"]
+        direction TB
+        SYSTEM
+        PROFILE
+        FACTS
+        BUDGET
+        HISTORY
+    end
+
+    PACK --> LLM["LLM"]
+    LLM --> RESP["Answer\n+ next action"]
+
+    classDef input fill:#E3F2FD,stroke:#1E88E5,color:#0D47A1;
+    classDef retrieve fill:#E8F5E9,stroke:#43A047,color:#1B5E20;
+    classDef pack fill:#FFF3E0,stroke:#FB8C00,color:#E65100;
+    classDef llm fill:#FCE4EC,stroke:#D81B60,color:#880E4F;
+
+    class UM,PARSE,EMB input;
+    class PROFILE,FACTS,RAG,BUDGET retrieve;
+    class SYSTEM,HISTORY pack;
+    class LLM,RESP llm;

@@ -7,8 +7,8 @@ Before we dive in, you'll see QR codes throughout the presentation. The first on
 [CLICK]
 
 Slide 2: My Journey
-"So, who am I? My journey has been a winding one through the tech world—from CompSci at university to big names like IBM and now co-founding my own venture, the ASIMOV Protocol.
-But the most important part of my story for today's talk is that in 2020, during the pandemic, I moved to Barbados on the Welcome Stamp. For the last few years, I've been building global-scale blockchain and AI systems from right here on the island. My mornings might involve paddleboarding with my dogs, but my afternoons are spent building technology used around the world.
+"So, who am I? My journey has been a winding one through the tech world—from CompSci at university to big names like IBM and now running my own venture, Dharach.
+But the most important part of my story for today's talk is that in 2020, during the pandemic, I moved to Barbados on the Welcome Stamp. For the last few years, I've been building global-scale blockchain and AI systems from right here on the island through my company Dharach. My mornings might involve paddleboarding with my dogs, but my afternoons are spent building technology used around the world.
 And of course, I've been fully embracing the culture—wukkin up, with my concrete waistline trying to keep up! This experience has shown me firsthand that world-class innovation is not tied to a physical location anymore."
 [CLICK]
 
@@ -70,13 +70,18 @@ Slides 13 & 14: YuhHearDem & Knowledge Graph Visualization
 * Now, you can simply ask a question like, 'What has been discussed about innovation?' and get a direct answer with links to the source. This is about making civic engagement accessible. As you can see from the graph, it connects people, topics, and specific discussions in a way a simple document never could."
 [CLICK TO NEXT SLIDE IN SECTION]
 
-Slides 15 & 17: ASIMOV Protocol & Positron
-"These local projects led to a global one: ASIMOV Protocol.
-* The Problem: LLMs are brilliant but they hallucinate—they make things up—and they have no reliable memory.
-* The Solution: We're building a system of knowledge graphs that provide verifiable, trusted memory for AI. It turns chaotic information into structured reasoning. It's a global team, with key development happening right here in Barbados.
-This same technology powers a personal tool I built called Positron.
-* The Problem: We all have notes, documents, and ideas scattered everywhere.
-* The Solution: Positron acts as your 'second brain,' connecting all your personal knowledge. You can upload all your documents and then ask smart, cross-topic questions like, 'Who do I know in Barbados who works in AI?' and it will find the answer by reasoning across all your information."
+Slides 15 & 17: Yuh Gettin Tru? & YuhHearDem
+"These local projects led to building more systems through Dharach.
+First, Yuh Gettin Tru?
+* The Problem: People driving store to store to find products, calling around for availability
+* The Solution: Island-wide product search across 100+ retailers with AI
+* How it works: Vector search + LLM reranking, understands Bajan, US & UK product terms
+* 340,000+ products, 1,000+ searches/day, 22% click-through rate
+
+And YuhHearDem:
+* The Problem: Parliamentary transcripts are unreadable
+* The Solution: AI makes them searchable & structured
+* Now you can ask 'What has been discussed about innovation?' and get an answer with source links."
 [CLICK]
 
 Slide 18: Core Patterns
@@ -114,12 +119,13 @@ Context Engineering is how we design, structure, and deliver the right informa
 
 Why does it matter? Because by default, LLMs have a messy 'knowledge soup' from their training data. They can't reason about information they haven't seen or can't access. If your context is messy or outdated, you get bad results. If it's clean, focused, and structured, you get great results.
 
-Basic methods include pasting a doc into the prompt or using few-shot examples. But advanced tools like RAG (Retrieval-Augmented Generation) and Knowledge Graphs are where the real power is.
-A new standard called the Model Context Protocol (MCP), built by the team at Anthropic, is emerging to handle this. Think of it as 'RAM for AI'—a structured, shared memory that makes AI inputs reliable and traceable. This is what enables powerful applications like learning agents and the civic transparency tools we saw earlier."
+ Basic methods include pasting a doc into the prompt or using few-shot examples. But advanced tools like RAG (Retrieval-Augmented Generation) and Knowledge Graphs are where the real power is.
+ 
+ The key is building the context deliberately: start with a solid system prompt, add user-specific facts, retrieve the most relevant memories via vector search, include recent message history, and only then make the LLM call. That's the flow you see in the diagram."
 
 Interactive bit: ask audience about who can bake a cake. Ask how many grams of flour needed in a Black Forest gateaux? Then ask them how they’d find out. Then pass cookbook to them to look it up.
 
-Talk about how this is how LLMs and RAG work (and what ASIMOV is doing in pulling encyclopaedic knowledge out of the “knowledge soup”.)
+Talk about how this is how LLMs and RAG work (and what Dharach is doing in pulling encyclopaedic knowledge out of the “knowledge soup”.)
 
 [CLICK TO NEXT SLIDE IN SECTION]
 
